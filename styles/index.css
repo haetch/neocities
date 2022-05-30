@@ -1,5 +1,4 @@
-/* body {
-    background-color: rgb(233, 188, 55);
+body {
     margin: 30em;
     padding: 1rem;
     font-family: 'Courier New', Courier, monospace;
@@ -10,7 +9,6 @@
 header {
     padding: 1em;
     border-width: 2px;
-    background-color: white;
 }
 
 h1 {
@@ -26,11 +24,10 @@ header p {
     line-height: 1.5em;
 }
 
-aside {
+section {
     margin-top: 1em;
     padding: 1em;
     border-width: 2px;
-    background-color: rgb(232, 206, 128);
 }
 
 nav h2 {
@@ -45,12 +42,6 @@ nav li {
     list-style-type: none;
 }
 
-nav a {
-    text-decoration-line: none;
-    text-decoration-style: none;
-    text-decoration-color: rgb(179, 179, 254);
-}
-
 footer {
     margin-top: 1em;
     padding: 1em;
@@ -60,4 +51,4 @@ footer p {
     text-align: center;
     font-variant: small-caps;
     text-transform: uppercase;
-} */
+}
