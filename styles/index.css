@@ -1,54 +1,77 @@
+:root {
+    /* These variables exist so you can make quick and simple style changes without much CSS knowledge */
+    /* applies to all areas */
+    --font-family: "Courier New", Courier, monospace;
+    --font-size: 16px;
+    --line-height: 1.5em;
+    --font-color: #E8E3E1;
+    --link-color: rgb(28, 217, 138);
+    --link-text-decoration: double;
+    /* main content (between sidebars) */
+    --content-padding: 25px;
+    --content-bg-color: black;
+    /* header */
+    --header-height: 150px;
+    --header-background: url('header2.png');
+    --header-margin-bottom: 0px;
+    /* footer */
+    --footer-height: 30px;
+    --footer-bg-color: black;
+    /* navbar */
+    --navitems-alignment: center;
+    --space-between-navitems: 20px;
+    --navbar-margin-bottom: 10px;
+    --nav-bg-color: black;
+    /* container */
+    --container-width: 800px;
+    --container-bg-color: black;
+    /* controls the gap between the content and the footer */
+    --row-gap: 5px;
+    /* To add scrollbars to your sidebars, just make the height a px value and change overflow to 'auto' */
+    --sidebar-height: 100%;
+    --sidebar-overflow: hidden;
+    --background-color: black;
+}
+
 body {
-    margin: 30em;
-    padding: 1rem;
+    margin: 0;
+    padding: 0;
+    background-color: white;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
     font-weight: bold;
-    font-size: 1em;
-}
-
-header {
-    padding: 1em;
-    border-width: 2px;
-}
-
-h1 {
-    text-align: center;
-    font-variant: small-caps;
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    text-transform: uppercase;
-}
-
-header p {
-    margin: 7%;
     line-height: 1.5em;
+    color: black;
 }
 
-section {
-    margin-top: 1em;
-    padding: 1em;
-    border-width: 2px;
+body a {
+    color: rgb(28, 217, 138);
+    text-decoration-style: double;
 }
 
-nav h2 {
+#main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#header-contained {
+    margin-bottom: 10px;
+    background-image: none;
+}
+
+nav {
+    margin-left: 0;
+    text-align: var(--navitems-alignment);
+    margin-top: 0;
+    margin-bottom: var(--navbar-margin-bottom);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: var(--nav-bg-color);
+}
+
+#footer-contained {
+    height: 30px;
     text-align: center;
-    font-variant: small-caps;
-    text-decoration-line: none;
-    text-decoration-style: none;
-    text-transform: uppercase;
-}
-
-nav li {
-    list-style-type: none;
-}
-
-footer {
-    margin-top: 1em;
-    padding: 1em;
-}
-
-footer p {
-    text-align: center;
-    font-variant: small-caps;
-    text-transform: uppercase;
+    padding: 5px;
 }
